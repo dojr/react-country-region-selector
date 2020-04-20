@@ -1,6 +1,6 @@
 {
-  "name": "react-country-region-selector",
-  "version": "2.0.0",
+  "name": "@dojr/react-country-region-selector",
+  "version": "3.0.0",
   "description": "CountryDropdown and RegionDropdown React components for your forms.",
   "author": "country-regions",
   "license": "MIT",
@@ -24,7 +24,9 @@
     "prepare": "npm run build",
     "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build",
-    "lint": "eslint"
+    "lint": "eslint",
+    "release:prepare": "shipjs prepare",
+    "release:trigger": "shipjs trigger"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
@@ -65,10 +67,8 @@
     "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^1.6.2",
-    "rollup-plugin-url": "^1.4.0"
+    "rollup-plugin-url": "^1.4.0",
+    "shipjs": "0.18.2"
   },
-  "files": [
-    "dist",
-    "index.d.ts"
-  ]
+  "files": ["dist", "index.d.ts"]
 }
