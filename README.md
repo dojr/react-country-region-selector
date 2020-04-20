@@ -233,7 +233,11 @@ To run this locally, do the following:
 - `npm install`
 - in one terminal window: `npm start`
 - in another terminal window, go to the `/example` subfolder and do the same: `npm install`, `npm start`
+<<<<<<< HEAD
+- Open `http://localhost:3000/` in a browser.
+=======
 - open `http://localhost:3000` in your browser.
+>>>>>>> master
 
 
 <a name="thanks"></a>
